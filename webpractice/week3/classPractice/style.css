@@ -1,0 +1,35 @@
+div span{
+    width: 50px;
+    height: 50px;
+    color: red;
+    display: block;
+}
+.inner{
+    width: 50px;
+    height: 50px;
+    color: red;
+    display: inline;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: coral;
+}
+.container{
+    margin: 20px;
+}
+.flexcontainer{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.flexinner{
+    width: 50px;
+    height: 50px;
+    color: red;
+    display: flex;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: coral;
+}
+.flexinner:first-child{
+    background-color: green;
+}
