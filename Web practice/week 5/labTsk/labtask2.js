@@ -5,7 +5,8 @@ let car={
 };
 
 function carInfo(car){
-  return 'The ${car.brand} ${car.model} was manufactured in ${car.year}.'
+  //return 'The ${car.brand} ${car.model} was manufactured in ${car.year}.'
+  return 'The ' +car.brand+" "  +car.model+' was manufactured in +'+car.year+'.'
 }
 
 console.log(carInfo(car));
