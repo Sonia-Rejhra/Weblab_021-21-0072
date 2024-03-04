@@ -1,6 +1,6 @@
 
-        const btn = document.getElementById("btn");
-        btn.style.backgroundColor = "violet";
+    const btn = document.getElementById("btn");
+    btn.style.backgroundColor = "violet";
         
     
     function addTask() {
