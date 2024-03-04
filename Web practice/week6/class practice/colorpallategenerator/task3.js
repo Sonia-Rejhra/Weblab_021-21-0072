@@ -1,6 +1,11 @@
 function applyFunction(arr,func){
-    // return arr.map(element => func(element));   
-    return arr.filter(!func);
+    newArray=[]
+    for(i in arr) {
+    if(arr[i]%2==0){
+
+    }
+    }
+    
    }
    
    num =[1,2,3,4]
