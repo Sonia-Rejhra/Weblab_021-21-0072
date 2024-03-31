@@ -13,6 +13,7 @@
     <div id="container">   
         <input type="text" id="taskInput" placeholder="Enter task...">
         <button id="btn">Add Task</button>
+        <div id ="taskArea"></div>
         
         
        
@@ -20,11 +21,19 @@
   
     <script>
        
-       const btn=document.getElementById("btn")
-       button.onclick=function(){
-        const txt = document.getElementById("taskInput").value
-        alert(textValue)
-       }
+       function addTask() {
+    var taskInput = document.getElementById("taskInput");
+    var taskList = document.getElementById("taskList");
+
+    if (taskInput.value === "") {
+        alert("Please enter a task!");
+        return;
+    }
+
+const myDiv = document.createElement("div")
+myDiv.innerText = taskInput
+
+
 
 
 
