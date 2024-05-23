@@ -1,0 +1,57 @@
+.App {
+  font-family: Arial, sans-serif;
+  
+  padding-top: 50px; 
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: 300px; 
+}
+
+select {
+  padding: 10px;
+}
+
+button {
+  padding: 12px 16px;
+  border-radius: 20%;
+  background-color: #1173e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 10%;
+  background-color: #e2e3e2;
+  padding: 8px;
+  margin: 10px 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li > *:first-child {
+  margin-left: auto;
+}
+
+.outter{
+  display: flex;
+}
+
+.inner{
+  height: 100%;
+  width: 50%;
+}

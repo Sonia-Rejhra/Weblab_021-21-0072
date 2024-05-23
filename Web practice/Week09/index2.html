@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container" >
+
+    </div>
+
+    <div class="card">
+        <div>title</div>
+        <div>slug</div>
+        <a href="#">link</a>
+    </div>
+    
+
+    <script>
+            let posts = [];
+            const container = document.getElementById('container')
+            function getThePosts(){
+
+            fetch('https://jsonplaceholder.org/posts/').then(apiresult => apiresult.json()).then(data => {
+                posts = data;
+                posts.forEach(element => {
+
+                    container.innerHTML+=`
+                    <div class="card">
+                        <div>title : ${element.title}</div>
+                        <div>slug : ${element.slug}</div>
+                        <a href="https://jsonplaceholder.org/posts/${element.id}">View</a>
+                    </div>
+                    `                    
+                });
+                
+            });
+                
+            }
+            
+            getThePosts()
+
+    </script>
+</body>
+</html>
