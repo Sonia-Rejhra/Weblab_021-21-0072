@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="fetch.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <div id="container"></div>
-    <script src="fetch.js"></script>
+    <div id="demo">
+     
+    </div>
+    <script>
+      
+     async function myDisplay(){
+      let myPromise = new Promise(function(resolve,rej){
+        setTimeout(function(){resolve("Sonia");},1500)
+       
+      });
+      document.getElementById("demo").innerHTML = await myPromise;
+     }
+     
+     myDisplay();
+    //  console.log("Soniaaa");
+     
+      
+</script>
   </body>
 </html>

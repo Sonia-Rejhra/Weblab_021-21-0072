@@ -47,3 +47,4 @@ export default function  (name) {
   </nav>
   )
 }
+//randring,conditional rendoring,map iterator as render option

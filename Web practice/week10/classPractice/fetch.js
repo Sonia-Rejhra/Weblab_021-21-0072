@@ -1,19 +1,5 @@
-const container = document.getElementById("container");
-const fetchUsers = () => {
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((apiResult) => apiResult.json())
-    .then((data) => {
-      data.forEach((user) => {
-        container.innerHTML += `<div class="user">
-        <img
-          src="https://api.dicebear.com/8.x/lorelei/svg?seed=${user.username}"
-          alt="user"
-        />
-        <div>${user.username}</div>
-        <div>${user.email}</div>
-      </div>
-    `;
-      });
-    });
-};
-fetchUsers();
+// const num =[15.5,2.4,1.1,4.7];
+// document.getElementById("demo").innerHTML = num.reduce(getSum,0);
+//  function getSum(total,num){
+//       return total+ Math.round(num);
+//  }

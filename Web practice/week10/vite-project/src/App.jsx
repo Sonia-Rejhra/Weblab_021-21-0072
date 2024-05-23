@@ -3,29 +3,45 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from '../components/Navbar';
+import FetchData from './fetchData';
+
 
 function App(){
-// myVar=[1,3,4,5,6]
+// var [list,setlist] = useState();
+// var [arrayList,setArray] = useState([]);
+// var [type,setType]=useState("bura");
 
-  
-    {/* {JSON.stringify(myVar)}
-<Navbar title="Think-Reality!"/> */}
-  const [count, setCount] = useState(0)
   return (
-    <>
- 
-      <h1>Counter</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+//   <>
+//  <input  type="text" value= {list}
+//  onChange={(e) => {
+// setlist(e.target.value);
+//  }}/>
+//  <select value={type} onChange={(e) =>{
+//   setType(e.target.value);
+//  }}>
+//   <option value="Acha">Acha</option>
+//   <option value="bura">bura</option>
+//   <option value="neutral">neutral</option>
+//  </select>
+//  <button onClick={() => setArray((prev) => [...prev, {name : list, type:type}])}>Add</button>
+
+//  {arrayList.filter((item) => item.type === "bura")
+//   .map((item)=>(
+// <li>
+//   {item.name}
+//   {item.type}
+// </li>
+// ))}
+
+
+
+// </>
+
+  // <FetchData />
+  div
+  
+     )
 
 
    
